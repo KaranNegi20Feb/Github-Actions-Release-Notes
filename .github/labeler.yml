@@ -1,27 +1,32 @@
 DevOps:
-  - path: 'devops*'
-  - path: 'infrastructure/**'
-  - path: 'ci/**'
-  - path: 'docker/**'
-  - path: '**/.github/**'
+  - paths:
+      - 'devops*'
+      - 'infrastructure/**'
+      - 'ci/**'
+      - 'docker/**'
+      - '**/.github/**'
 
 documentation:
-  - path: 'docs/**'
-  - path: '**/*.md'
-  - path: 'README.md'
-  - path: 'documentation/**'
+  - paths:
+      - 'docs/**'
+      - '**/*.md'
+      - 'README.md'
+      - 'documentation/**'
 
 Server:
-  - path: '**/server/**'
+  - paths:
+      - '**/server/**'
 
 UI:
-  - path: '**/client/**'
-  - path: '**/*.css'
-  - path: '**/*.scss'
-  - path: '**/*.html'
+  - paths:
+      - '**/client/**'
+      - '**/*.css'
+      - '**/*.scss'
+      - '**/*.html'
 
 Test:
-  - path: '**/*.test.*'         # Matches files like *.test.js, *.test.ts, *.test.py etc.
-  - path: '**/tests/**'         # Matches any files inside any tests folder at any depth
-  - path: '**/__tests__/**'     # Common test folder pattern in many repos
-  - path: '**/test/**'          # Matches folders named test (singular)
+  - paths:
+      - '**/*.test.*'
+      - '**/tests/**'
+      - '**/__tests__/**'
+      - '**/test/**'
