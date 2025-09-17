@@ -27,7 +27,7 @@ jobs:
             const keywordMapping = {
               'devops': ['docker', 'ci', 'infrastructure', 'pipeline', 'devops', 'kubernetes'],
               'bug': ['not working', 'error', 'failure', 'crash', 'fix', 'bug'],
-              'enhancement': ['feature request', 'add', 'improve', 'suggestion', 'enhancement'],
+              'enhancement': ['feature request', 'improve', 'suggestion', 'enhancement'],
               'documentation': ['doc', 'readme', 'guide', 'tutorial', 'docs'],
               'question': ['clarification', 'help', 'how to', 'guidance'],
             };
