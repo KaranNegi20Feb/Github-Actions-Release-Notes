@@ -1,19 +1,22 @@
 name-template: 'v$NEXT_PATCH_VERSION 🚀'
 tag-template: 'v$NEXT_PATCH_VERSION'
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+template: |
+  👋 Hey community! The latest release is here. Check out what's new and improved:
+
+  ## Changes
+  $CHANGES
+
+  ## Contributors
+  $CONTRIBUTORS
+
+  *Generated automatically by Release Drafter.*
 categories:
   - title: 'New Features 🚀'
-    labels:
-      - enhancement
-      - feature
+    labels: [ 'enhancement', 'feature' ]
   - title: 'Bug Fixes 🐛'
-    labels:
-      - bug
-      - fix
+    labels: [ 'bug', 'fix' ]
   - title: 'Documentation 📚'
-    labels:
-      - documentation
-      - docs
-exclude-labels:
-  - ignore-for-release
-  - do-not-merge
+    labels: [ 'documentation', 'docs' ]
+
+exclude-labels: [ 'ignore-for-release', 'do-not-merge' ]
+# ... other settings
