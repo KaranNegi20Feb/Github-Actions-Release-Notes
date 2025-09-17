@@ -1,8 +1,9 @@
 bug:
-  - 'bug*'
-  - '**/bug/**'
-  - '**/*.test.js'
-  - 'tests/**'
+  - '**/src/**'            # Changes in source code likely contain bug fixes
+  - 'fix*'                # PR titles or branch names starting with "fix"
+  - 'bug*'                # Titles or branch names starting with "bug"
+  - 'error*'              # Titles mentioning errors
+  - 'fail*'               # Titles mentioning failures
 
 DevOps:
   - 'devops*'
@@ -15,7 +16,6 @@ documentation:
   - 'docs/**'
   - '**/*.md'
   - 'README.md'
-  - 'readme'
   - 'documentation/**'
 
 duplicate:
@@ -50,15 +50,13 @@ question:
   - 'help'
 
 Server:
-  - 'server/**'
-  - 'backend/**'
-  - 'api/**'
+  - '**/server/**'
 
 UI:
-  - 'ui/**'
-  - 'frontend/**'
-  - 'design/**'
-  - 'ux/**'
+  - '**/client/**'
+  - '**/*.css'
+  - '**/*.scss'
+  - '**/*.html'
 
 wontfix:
   - 'wontfix'
