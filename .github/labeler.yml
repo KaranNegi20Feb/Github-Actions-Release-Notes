@@ -15,8 +15,7 @@ documentation:
   - 'docs/**'
   - '**/*.md'
   - 'README.md'
-  - 'Readme.md'
-  - 'readme.md'
+  - 'readme'
   - 'documentation/**'
 
 duplicate:
