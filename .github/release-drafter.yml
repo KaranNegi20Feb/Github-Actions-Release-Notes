@@ -11,14 +11,21 @@ categories:
     labels:
       - enhancement
       - feature
+      - UI
+      - Server
+
   - title: 'Bug Fixes 🐛'
     labels:
       - bug
       - fix
+      - DevOps
+      - Test
+
   - title: 'Documentation 📚'
     labels:
       - documentation
       - docs
+
 exclude-labels:
   - ignore-for-release
   - do-not-merge
