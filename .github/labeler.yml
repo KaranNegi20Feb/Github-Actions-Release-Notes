@@ -1,0 +1,68 @@
+bug:
+  - 'bug*'
+  - '**/bug/**'
+  - '**/*.test.js'
+  - 'tests/**'
+
+DevOps:
+  - 'devops*'
+  - 'infrastructure/**'
+  - 'ci/**'
+  - 'docker/**'
+  - '**/.github/workflows/**'
+
+documentation:
+  - 'docs/**'
+  - '**/*.md'
+  - 'README.md'
+  - 'Readme.md'
+  - 'readme.md'
+  - 'documentation/**'
+
+duplicate:
+  - 'duplicate'
+  - 'already exists'
+  - 'repeated'
+
+enhancement:
+  - 'feature*'
+  - 'enhancement'
+  - 'improvement'
+  - '**/src/**'
+
+good first issue:
+  - 'good first issue'
+  - 'beginner'
+  - 'easy'
+  - 'starter'
+
+help wanted:
+  - 'help wanted'
+  - 'help-needed'
+  - 'community'
+
+invalid:
+  - 'invalid'
+  - 'not reproducible'
+  - 'not valid'
+
+question:
+  - 'question'
+  - 'support'
+  - 'help'
+
+Server:
+  - 'server/**'
+  - 'backend/**'
+  - 'api/**'
+
+UI:
+  - 'ui/**'
+  - 'frontend/**'
+  - 'design/**'
+  - 'ux/**'
+
+wontfix:
+  - 'wontfix'
+  - 'no fix'
+  - 'no longer supported'
