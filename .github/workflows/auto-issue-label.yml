@@ -13,7 +13,7 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-      - name: Apply Labels to Issues
+      - name: Apply Labels to Issues by Keywords
         uses: actions/github-script@v6
         with:
           script: |
@@ -23,17 +23,22 @@ jobs:
             const title = issue.title.toLowerCase();
             const body = (issue.body || '').toLowerCase();
 
+            // Mapping labels to keywords - use whole word/phrase matching
             const keywordMapping = {
-              "bug": ["error", "failure", "not working", "crash", "unexpected"],
-              "enhancement": ["add", "feature request", "improve", "suggestion"],
-              "question": ["clarification", "help", "how to", "guidance"],
-              "devops": ["ci", "docker", "infrastructure", "pipeline"],
-              "documentation": ["doc", "readme", "guide", "tutorial"]
+              'devops': ['docker', 'ci', 'infrastructure', 'pipeline', 'devops', 'kubernetes'],
+              'bug': ['not working', 'error', 'failure', 'crash', 'fix', 'bug'],
+              'enhancement': ['feature request', 'add', 'improve', 'suggestion', 'enhancement'],
+              'documentation': ['doc', 'readme', 'guide', 'tutorial', 'docs'],
+              'question': ['clarification', 'help', 'how to', 'guidance'],
             };
+
+            function containsKeyword(text, keywords) {
+              return keywords.some(kw => new RegExp(`\\b${kw}\\b`).test(text));
+            }
 
             const labelsToAdd = Object.entries(keywordMapping)
               .filter(([label, keywords]) =>
-                keywords.some(kw => title.includes(kw) || body.includes(kw)))
+                containsKeyword(title, keywords) || containsKeyword(body, keywords))
               .map(([label]) => label);
 
             if (labelsToAdd.length > 0) {
