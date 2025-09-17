@@ -27,7 +27,6 @@ enhancement:
   - 'feature*'
   - 'enhancement'
   - 'improvement'
-  - '**/src/**'
 
 good first issue:
   - 'good first issue'
