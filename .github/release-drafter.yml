@@ -1,22 +1,24 @@
 name-template: 'v$NEXT_PATCH_VERSION 🚀'
 tag-template: 'v$NEXT_PATCH_VERSION'
 template: |
-  👋 Hey community! The latest release is here. Check out what's new and improved:
+  ## What's Changed
 
-  ## Changes
   $CHANGES
 
-  ## Contributors
-  $CONTRIBUTORS
-
-  *Generated automatically by Release Drafter.*
+  Thanks to our contributors: $CONTRIBUTORS
 categories:
   - title: 'New Features 🚀'
-    labels: [ 'enhancement', 'feature' ]
+    labels:
+      - enhancement
+      - feature
   - title: 'Bug Fixes 🐛'
-    labels: [ 'bug', 'fix' ]
+    labels:
+      - bug
+      - fix
   - title: 'Documentation 📚'
-    labels: [ 'documentation', 'docs' ]
-
-exclude-labels: [ 'ignore-for-release', 'do-not-merge' ]
-# ... other settings
+    labels:
+      - documentation
+      - docs
+exclude-labels:
+  - ignore-for-release
+  - do-not-merge
