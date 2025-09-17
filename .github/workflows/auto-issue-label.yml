@@ -28,7 +28,7 @@ jobs:
               'devops': ['docker', 'ci', 'infrastructure', 'pipeline', 'devops', 'kubernetes'],
               'bug': ['not working', 'error', 'failure', 'crash', 'fix', 'bug'],
               'enhancement': ['feature request', 'improve', 'suggestion', 'enhancement'],
-              'documentation': ['doc', 'readme', 'guide', 'tutorial', 'docs'],
+              'documentation': ['documentations','documentation','docs','doc', 'readme', 'guide', 'tutorial', 'tutorials'],
               'question': ['clarification', 'help', 'how to', 'guidance'],
             };
 
