@@ -1,0 +1,64 @@
+bug:
+  - '**/src/**'            # Changes in source code likely contain bug fixes
+  - 'fix*'                # PR titles or branch names starting with "fix"
+  - 'bug*'                # Titles or branch names starting with "bug"
+  - 'error*'              # Titles mentioning errors
+  - 'fail*'               # Titles mentioning failures
+
+DevOps:
+  - 'devops*'
+  - 'infrastructure/**'
+  - 'ci/**'
+  - 'docker/**'
+  - '**/.github/workflows/**'
+
+documentation:
+  - 'docs/**'
+  - '**/*.md'
+  - 'README.md'
+  - 'documentation/**'
+
+duplicate:
+  - 'duplicate'
+  - 'already exists'
+  - 'repeated'
+
+enhancement:
+  - 'feature*'
+  - 'enhancement'
+  - 'improvement'
+
+good first issue:
+  - 'good first issue'
+  - 'beginner'
+  - 'easy'
+  - 'starter'
+
+help wanted:
+  - 'help wanted'
+  - 'help-needed'
+  - 'community'
+
+invalid:
+  - 'invalid'
+  - 'not reproducible'
+  - 'not valid'
+
+question:
+  - 'question'
+  - 'support'
+  - 'help'
+
+Server:
+  - '**/server/**'
+
+UI:
+  - '**/client/**'
+  - '**/*.css'
+  - '**/*.scss'
+  - '**/*.html'
+
+wontfix:
+  - 'wontfix'
+  - 'no fix'
+  - 'no longer supported'
