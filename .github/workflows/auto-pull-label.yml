@@ -1,21 +1,12 @@
-name: Auto Label PRs
-
-permissions:
-  contents: read
-  pull-requests: write
-
+name: "Pull Request Labeler"
 on:
-  issues:
-    types: [opened, edited]
-  pull_request_target:
-    types: [opened, edited]
+- pull_request_target
 
 jobs:
-  label:
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v4
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: '.github/labeler.yml'
-          sync-labels: true
+    - uses: actions/labeler@v6
