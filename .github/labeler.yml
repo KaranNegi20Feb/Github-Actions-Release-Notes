@@ -1,10 +1,3 @@
-bug:
-  - '**/src/**'            # Changes in source code likely contain bug fixes
-  - 'fix*'                # PR titles or branch names starting with "fix"
-  - 'bug*'                # Titles or branch names starting with "bug"
-  - 'error*'              # Titles mentioning errors
-  - 'fail*'               # Titles mentioning failures
-
 DevOps:
   - 'devops*'
   - 'infrastructure/**'
@@ -18,37 +11,6 @@ documentation:
   - 'README.md'
   - 'documentation/**'
 
-duplicate:
-  - 'duplicate'
-  - 'already exists'
-  - 'repeated'
-
-enhancement:
-  - 'feature*'
-  - 'enhancement'
-  - 'improvement'
-
-good first issue:
-  - 'good first issue'
-  - 'beginner'
-  - 'easy'
-  - 'starter'
-
-help wanted:
-  - 'help wanted'
-  - 'help-needed'
-  - 'community'
-
-invalid:
-  - 'invalid'
-  - 'not reproducible'
-  - 'not valid'
-
-question:
-  - 'question'
-  - 'support'
-  - 'help'
-
 Server:
   - '**/server/**'
 
@@ -58,7 +20,8 @@ UI:
   - '**/*.scss'
   - '**/*.html'
 
-wontfix:
-  - 'wontfix'
-  - 'no fix'
-  - 'no longer supported'
+Test:
+  - '**/*.test.*'         # Matches files like *.test.js, *.test.ts, *.test.py etc.
+  - '**/tests/**'         # Matches any files inside any tests folder at any depth
+  - '**/__tests__/**'     # Common test folder pattern in many repos
+  - '**/test/**'          # Matches folders named test (singular)
