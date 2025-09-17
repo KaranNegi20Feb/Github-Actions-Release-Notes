@@ -1,32 +1,27 @@
 DevOps:
-  - paths:
-      - 'devops*'
-      - 'infrastructure/**'
-      - 'ci/**'
-      - 'docker/**'
-      - '**/.github/**'
+  - 'devops*'
+  - 'infrastructure/**'
+  - 'ci/**'
+  - 'docker/**'
+  - '**/.github/**'
 
 documentation:
-  - paths:
-      - 'docs/**'
-      - '**/*.md'
-      - 'README.md'
-      - 'documentation/**'
+  - 'docs/**'
+  - '**/*.md'
+  - 'README.md'
+  - 'documentation/**'
 
 Server:
-  - paths:
-      - '**/server/**'
+  - '**/server/**'
 
 UI:
-  - paths:
-      - '**/client/**'
-      - '**/*.css'
-      - '**/*.scss'
-      - '**/*.html'
+  - '**/client/**'
+  - '**/*.css'
+  - '**/*.scss'
+  - '**/*.html'
 
 Test:
-  - paths:
-      - '**/*.test.*'
-      - '**/tests/**'
-      - '**/__tests__/**'
-      - '**/test/**'
+  - '**/*.test.*'
+  - '**/tests/**'
+  - '**/__tests__/**'
+  - '**/test/**'
