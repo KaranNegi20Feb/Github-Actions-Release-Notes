@@ -1,4 +1,4 @@
-name: "Auto Pull Request Labeler"
+name: "Auto Pull Request Label"
 on:
 - pull_request_target
 
