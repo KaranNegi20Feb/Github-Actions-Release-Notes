@@ -26,7 +26,7 @@ jobs:
             // Mapping labels to keywords - use whole word/phrase matching
             const keywordMapping = {
               'devops': ['docker', 'ci', 'infrastructure', 'pipeline', 'devops', 'kubernetes'],
-              'server': ['server','backend','api','apis','services','route','routing']
+              'server': ['server','backend','api','apis','services','route','routing'],
               'bug': ['not working', 'error', 'issue', 'failure', 'crash', 'fix', 'bug' ],
               'enhancement': ['feature request', 'improve', 'suggestion', 'enhancement'],
               'documentation': ['documentations','documentation','docs','doc', 'readme', 'guide', 'tutorial', 'tutorials'],
